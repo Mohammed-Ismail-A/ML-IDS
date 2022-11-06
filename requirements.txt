@@ -3,5 +3,4 @@ seaborn
 matplotlib
 plotly
 streamlit-option-menu
-pickle
 joblib

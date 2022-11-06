@@ -10,20 +10,20 @@ import joblib #Scaler
 
 st. set_page_config(layout="wide")
 
-file1 = open("./gifs/Intrusion_Attack.gif", "rb")
-file2 = open("./gifs/IDS.gif", "rb")
-file3 = open("./gifs/bfa.gif", "rb")
-file4 = open("./gifs/dos.gif", "rb")
-file5 = open("./gifs/ddos.gif", "rb")
-file6 = open("./gifs/insider.gif", "rb")
+file1 = open("gifs/Intrusion_Attack.gif", "rb")
+file2 = open("gifs/IDS.gif", "rb")
+file3 = open("gifs/bfa.gif", "rb")
+file4 = open("gifs/dos.gif", "rb")
+file5 = open("gifs/ddos.gif", "rb")
+file6 = open("gifs/insider.gif", "rb")
 
-scaler = joblib.load('./model_req/robust_scaler.bin')
+scaler = joblib.load('model_req/robust_scaler.bin')
 
-pkl_file = open('./model_req/label_enc.pkl', 'rb')
+pkl_file = open('model_req/label_enc.pkl', 'rb')
 encoder = pickle.load(pkl_file) 
 pkl_file.close()
 
-model = joblib.load('./model_req/model_jlib')
+model = joblib.load('model_req/model_jlib')
 
 gif1 = file1.read()
 gif2 = file2.read()
@@ -49,8 +49,8 @@ file6.close()
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-df = pd.read_csv(r'./data/cic_ids_2018.csv')
-res_df = pd.read_excel(r'./output/output_metric.xlsx', engine='openpyxl')
+df = pd.read_csv('data/cic_ids_2018.csv')
+res_df = pd.read_excel('output/output_metric.xlsx', engine='openpyxl')
 
 tot_lst = ['Dst Port', 'Flow Duration', 'Tot Fwd Pkts', 'Tot Bwd Pkts',
        'TotLen Fwd Pkts', 'TotLen Bwd Pkts', 'Fwd Pkt Len Max',
@@ -142,7 +142,7 @@ if menu == "Home":
             That includes passwords, credit card numbers, medical records, and the contents of private email or social media messages.
             Attackers can also get access to a server's private encryption key. 
             That could allow the attacker to unscramble any private messages sent to the server and even impersonate the server.""")
-            st.image("./gifs/heartbleedbug.jpg", width=500)
+            st.image("gifs/heartbleedbug.jpg", width=500)
 
         st.subheader("Botnet")
         bfa_expander = st.expander("Expand", expanded=False)
@@ -150,7 +150,7 @@ if menu == "Home":
             st.write("""A botnet is a group of Internet-connected devices, each of which runs one or more bots. 
             Botnets can be used to perform Distributed Denial-of-Service attacks, steal data, send spam, and allow the attacker to access the device and its connection. 
             The owner can control the botnet using command and control software.""")
-            st.image("./gifs/botnet.jpg", width=500)
+            st.image("gifs/botnet.jpg", width=500)
 
         st.subheader("Denial-of-Service")
         bfa_expander = st.expander("Expand", expanded=False)
@@ -175,7 +175,7 @@ if menu == "Home":
             st.write("""Serious weaknesses or vulnerabilities allow criminals to gain direct and public access to 
             databases in order to churn sensitive data – this is known as a web application attack. 
             Many of these databases contain valuable information (e.g. personal data and financial details) making them a frequent target of attacks.""")
-            st.image("./gifs/webattack.png", width=500)
+            st.image("gifs/webattack.png", width=500)
 
         st.subheader("Infiltration of the network from inside")
         bfa_expander = st.expander("Expand", expanded=False)
@@ -397,8 +397,8 @@ if menu == "Results":
     st.table(res_df)
     col1, col2 = st.columns(2)
     col1.write("Spearman correlation heatmap of the models trained is shown below")
-    col1.image("./output/correlation_heatmap_automl.png")
-    col2.image("./output/ldb_performance_boxplot.png")
+    col1.image("output/correlation_heatmap_automl.png")
+    col2.image("output/ldb_performance_boxplot.png")
     col2.write("Boxplot of logloss of the models trained is shown above")
 
 if menu == "Analysis Tool":

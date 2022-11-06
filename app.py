@@ -364,7 +364,7 @@ if menu == "Visualization":
             xaxis_title="Label Class",
             yaxis_title="Count",
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig)
     
     elif ch_2 == "Malign Count":
         sample = {}
@@ -390,7 +390,7 @@ if menu == "Visualization":
     elif ch_2 == "Correlation Heatmap":
         fig = plt.figure(figsize=(20, 15))
         sns.heatmap(data.corr(), annot=True, fmt='.2f')
-        st.pyplot(fig, use_container_width=True)
+        st.pyplot(fig)
 
 if menu == "Results":
     st.write("Evaluation metric result of various models trained using Auto ML is shown in below table")

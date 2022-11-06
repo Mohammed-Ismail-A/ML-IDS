@@ -385,7 +385,7 @@ if menu == "Visualization":
             xaxis_title="Label Class",
             yaxis_title="Count",
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig)
     
     elif ch_2 == "Correlation Heatmap":
         fig = plt.figure(figsize=(20, 15))

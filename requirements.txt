@@ -2,7 +2,6 @@ pandas
 seaborn
 matplotlib
 plotly
-base64
 streamlit-option-menu
 pickle
 joblib

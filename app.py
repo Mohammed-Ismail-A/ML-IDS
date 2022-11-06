@@ -142,7 +142,7 @@ if menu == "Home":
             That includes passwords, credit card numbers, medical records, and the contents of private email or social media messages.
             Attackers can also get access to a server's private encryption key. 
             That could allow the attacker to unscramble any private messages sent to the server and even impersonate the server.""")
-            st.image("gifs/heartbleedbug.jpg", width=500)
+            st.image("gifs/Heartbleedbug.jpg", width=500)
 
         st.subheader("Botnet")
         bfa_expander = st.expander("Expand", expanded=False)

@@ -401,6 +401,8 @@ if menu == "Results":
     col1.image("output/correlation_heatmap_automl.png")
     col2.image("output/ldb_performance_boxplot.png")
     col2.write("Boxplot of logloss of the models trained is shown above")
+    st.image("output/cnf_matrix.png")
+    st.write("Confusion matrix of XGBoost Classifier")
 
 if menu == "Analysis Tool":
     st.subheader("Instructions to be followed:")

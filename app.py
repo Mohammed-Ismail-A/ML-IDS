@@ -120,7 +120,8 @@ if menu == "Home":
         with st.container():
             st.write("""Intrusion Detection System is a software application to detect network intrusion using various machine learning 
             algorithms.IDS monitors a network or system for malicious activity and protects a computer network from unauthorized access from users,
-             including perhaps insider. The intrusion detector learning task is to build a predictive model.""")
+             including perhaps insider. The intrusion detector learning task is to build a predictive model. Recently, Machine Learning (ML) algorithms are applied in IDS in order to identify and classify the security threats. 
+             """)
         with st.container():
             _left, mid, _right = st.columns(3)
             with mid:

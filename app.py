@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import base64
 from streamlit_option_menu import option_menu
-import pandas as pd
 import pickle #LabelEncoder
 import joblib #Scaler
 

@@ -148,7 +148,7 @@ if menu == "Home":
             st.write("""A botnet is a group of Internet-connected devices, each of which runs one or more bots. 
             Botnets can be used to perform Distributed Denial-of-Service attacks, steal data, send spam, and allow the attacker to access the device and its connection. 
             The owner can control the botnet using command and control software.""")
-            st.image("gifs/botnet.jpg", width=500)
+            st.image("gifs/botnet.jpg",  use_column_width = 'auto')
 
         st.subheader("Denial-of-Service")
         bfa_expander = st.expander("Expand", expanded=False)

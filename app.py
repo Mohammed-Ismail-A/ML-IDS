@@ -102,8 +102,8 @@ if menu == "Home":
     )
 
     if ch == "Network Intrusion":
-        col1, col2 = st.columns(2)
         st.header("What is Network Intrusion?")
+        col1, col2 = st.columns(2)
         with col1:
             st.write("""A network intrusion is any illegal activity carried out on a digital network.
             Network incursions frequently entail the theft of valuable network resources and virtually always compromise a network security and/or data security.
@@ -115,8 +115,8 @@ if menu == "Home":
             st.markdown(f'<img src="data:image/gif;base64,{data_url_1}" alt="nw intrusion gif" width="500">', unsafe_allow_html=True)
 
     if ch == "NIDS-ML":
-        col1, col2 = st.columns(2)
         st.header("What is Network Intrusion?")
+        col1, col2 = st.columns(2)
         with col1:
             st.write("""Intrusion Detection System is a software application to detect network intrusion using various machine learning 
             algorithms.IDS monitors a network or system for malicious activity and protects a computer network from unauthorized access from users,
@@ -126,7 +126,6 @@ if menu == "Home":
             st.markdown(f'<img src="data:image/gif;base64,{data_url_2}" alt="nw intrusion gif" width="500">', unsafe_allow_html=True)
 
     if ch == "Malwares Handled":
-        
         st.subheader("Brute-Force Attack")
         bfa_expander = st.expander("Expand", expanded=False)
         with bfa_expander:

@@ -6,7 +6,10 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
   }
-
+  img {
+    height: auto;
+    width:100%;
+ }
   .numbers {
     font-family: 'Arial', sans-serif;
     font-size: 90px;

@@ -102,30 +102,28 @@ if menu == "Home":
     )
 
     if ch == "Network Intrusion":
+        col1, col2 = st.columns(2)
         st.header("What is Network Intrusion?")
-        with st.container():
+        with col1():
             st.write("""A network intrusion is any illegal activity carried out on a digital network.
             Network incursions frequently entail the theft of valuable network resources and virtually always compromise a network security and/or data security.
             A network intrusion refers to any unauthorized activity on a digital network. Network intrusions often involve stealing valuable network resources and 
             almost always jeopardize the security of networks and/or their data. In order to  proactively detect and respond to network intrusions, 
             organizations and their cybersecurity teams need to have a thorough understanding of how network
             intrusions work and implement network intrusion, detection, and response systems that are designed with attack techniques and cover-up methods in mind.""")
-        with st.container():
-            _left, mid, _right = st.columns(3)
-            with mid:
-                st.markdown(f'<img src="data:image/gif;base64,{data_url_1}" alt="nw intrusion gif" width="500">', unsafe_allow_html=True)
+        with col2():
+            st.markdown(f'<img src="data:image/gif;base64,{data_url_1}" alt="nw intrusion gif" width="500">', unsafe_allow_html=True)
 
     if ch == "NIDS-ML":
+        col1, col2 = st.columns(2)
         st.header("What is Network Intrusion?")
-        with st.container():
+        with col1():
             st.write("""Intrusion Detection System is a software application to detect network intrusion using various machine learning 
             algorithms.IDS monitors a network or system for malicious activity and protects a computer network from unauthorized access from users,
              including perhaps insider. The intrusion detector learning task is to build a predictive model. Recently, Machine Learning (ML) algorithms are applied in IDS in order to identify and classify the security threats. 
              """)
-        with st.container():
-            _left, mid, _right = st.columns(3)
-            with mid:
-                st.markdown(f'<img src="data:image/gif;base64,{data_url_2}" alt="nw intrusion gif" width="500">', unsafe_allow_html=True)
+        with col2():
+            st.markdown(f'<img src="data:image/gif;base64,{data_url_2}" alt="nw intrusion gif" width="500">', unsafe_allow_html=True)
 
     if ch == "Malwares Handled":
         

@@ -140,7 +140,7 @@ if menu == "Home":
             That includes passwords, credit card numbers, medical records, and the contents of private email or social media messages.
             Attackers can also get access to a server's private encryption key. 
             That could allow the attacker to unscramble any private messages sent to the server and even impersonate the server.""")
-            st.image("gifs/Heartbleedbug.jpg", width=500)
+            st.image("gifs/Heartbleedbug.jpg", use_column_width = 'auto')
 
         st.subheader("Botnet")
         bfa_expander = st.expander("Expand", expanded=False)
@@ -173,7 +173,7 @@ if menu == "Home":
             st.write("""Serious weaknesses or vulnerabilities allow criminals to gain direct and public access to 
             databases in order to churn sensitive data – this is known as a web application attack. 
             Many of these databases contain valuable information (e.g. personal data and financial details) making them a frequent target of attacks.""")
-            st.image("gifs/webattack.png", width=500)
+            st.image("gifs/webattack.png", use_column_width = 'auto')
 
         st.subheader("Infiltration of the network from inside")
         bfa_expander = st.expander("Expand", expanded=False)
